@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nordic House</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+h1{
+	margin: 0!important;
+}
+
+.bgimg {
+    height: 100px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+body {
+  font-family: Century Gothic;
+  margin: 0;
+}
+
+.header {
+    background-image: url('img/back-top.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: Outfit;
+    text-align: center;
+    background-color: #d7cbcc;
+    color: black;
+    min-height: 450px;
+	max-height: 600px;
+    display: table;
+    width: 100%;
+	height: 56vw;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #bc9783;
+  justify-content:space-around;
+}
+
+.navbar a {
+  background-color: #bc9783;
+  color: #fff7f0;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+.navbar a:hover {
+  background-color: #fff7f0;
+  color: black;
+}
+
+.wrapper-menu{
+    background-color: #fff7f0;
+    text-align: center;
+}
+
+.container-menu{
+    padding-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.search {
+    background-color: #fff7f0;
+    padding-top: 10px;
+    width: 100%;
+}
+#search {
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #bc9783;
+    padding: 2px 7px;
+    width: 95%;
+}
+
+#do-search {
+    background-color: transparent;
+    color: #bc9783;
+    margin-left: -35px;
+    border: 0;
+}
+
+#do-search:hover {
+color: black;
+cursor: pointer;
+}
+
+.category{
+  display: flex;
+  background-color: #bc9783;
+  justify-content:space-around;
+  flex-direction: column;
+}
+
+.category a {
+  background-color: #bc9783;
+  color: #fff7f0;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+/* Change color on hover */
+.category a:hover {
+  background-color: #fff7f0;
+  color: black;
+}
+
+
+.categoryTitle{
+  background-color: #fff7f0;
+  color: black;
+}
+
+.actions {
+  background-color: #fff7f0;
+  margin: 20px;
+  text-align: center;
+  
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #fff7f0;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: #fff7f0;
+  padding: 20px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.img {
+  background-color: #aaa;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar{   
+    flex-direction: column;
+  }
+  .category {
+	display: none;
+  } 
+  .categoryTitle {
+	padding: 14px 20px;
+	text-align: left;
+  }
+  .categoryTitle :hover {
+	background-color: #bc9783;
+	color: black;
+  } 
+  .card{
+  width:89%!important;
+  margin-bottom: 20px!important;
+  }
+  .row1{
+  display: block!important;
+  }  
+  .ots{
+  margin-top: 0!important;
+  }
+  .footer{
+  flex-direction: column;
+  }
+  .column{
+  width: 100%!important;
+  max-width: 100%!important;
+  }
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<!-- Header -->
+<div class="header">
+	<div class="bgimg">
+		<h1>Nordic House</h1>
+		<hr class="border-grey" style="margin:auto;width:40%">
+		<p style="font-family:Century Gothic">В лучших традициях скандинавского уюта.</p> 	
+	</div>	
+	
+</div>
+
+<div class="header-icons">
+			<button class="user card-button">
+				<i class="far fa-user"></i>
+			</button>
+			<button class="shopping-basket card-button">
+				<i class="fas fa-shopping-basket"></i>
+			</button>
+			<button class="like card-button">
+				<i class="far fa-heart"></i>
+			</button>
+		</div>		
+
+
+<style>
+	.header-icons{
+	float: right;
+	margin-top: -50px;
+	}
+</style>
+
+
+
+<!-- Navigation Bar-->
+<div class="wrapper-navbar">
+	<div class="navbar">
+	  <a href="#">Главная</a>
+	  <a href="#">О нас</a>
+	  <a href="#">Каталог</a>
+	  <a href="#">Контакты</a>
+	</div>
+</div>
+
+<div class="wrapper-menu">
+    <div class="container-menu">
+        <div class="search">
+            <input type="text" id="search" placeholder="Искать...">
+            <button id="do-search"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="actions">
+	<div class="actions-buttons">
+	 <button>
+		<i class="fas fa-chevron-left"></i>
+	 </button>
+	 
+	 <div style="width:85%"></div>
+		
+	 <button>
+		<i class="fas fa-chevron-right"></i>
+	 </button>
+		
+	</div>
+	<img src="img/actions.png" alt="Новогоднее предложение">
+</div>
+
+<style>
+.actions-buttons{
+width: 80vw;
+margin: -25px 10vw;
+display: flex;
+justify-content: space-around;
+z-index: 2;
+}
+
+.actions-buttons button {
+z-index: 3;
+background-color: transparent;
+border: 0;
+cursor: pointer;
+padding: 20px;
+}
+
+.actions{
+width: 100%;
+padding-top: 15vw;
+}
+
+html {
+background-color: #fff7f0;
+}
+
+.actions img {
+	height: 30vw;
+	width: 80vw;
+	margin:-15vw 10vw 0 10vw;
+	z-index: 1;
+}
+</style>
+
+
+<!-- The flexible grid (content) -->
+<div class="row">
+	<div class="side">
+		<div class="categoryTitle">
+			<h2>Категории</h2>
+		</div>
+	
+		<div class="category">
+			<a href="#">Свечи</a>
+			<a href="#">Пледы</a>
+			<a href="#">Картины, плакаты</a>
+			<a href="#">Лампы и светильники</a>
+			<a href="#">Кружки, термосы</a>
+			<a href="#">Гирлянды</a>
+			<a href="#">Фотоальбомы, фоторамки</a>
+			<a href="#">Декор</a>
+		</div>
+	</div>
+	
+	<div class="main">
+		<h2>Новинки</h2>
+		<div class="row1">
+			<div class="card">
+				<img src="https://www.ikea.com/ru/ru/images/products/stenkrasse-pled-krasnyy-belyy__1066005_pe852277_s5.jpg?f=xxs" style="width:100%; padding: 10px 10px" >
+				<div class="action-buttons">
+					<button class="shopping-basket card-button">
+						<i class="fas fa-shopping-basket"></i>
+					</button>
+					<button class="like card-button">
+						<i class="far fa-heart"></i>
+					</button>
+				</div>
+				<h3>Плед, 130*170 см</h3>
+				<p>2299р.</p>
+				<div class="buy">
+					<button class="buy-button">
+						<p> Купить </p>	
+					</button>
+				</div>
+				
+			</div>
+			
+			<div class="card">
+				<img src="https://www.ikea.com/ru/ru/images/products/helgun-pled-korichnevyy-zheltyy__0964344_pe809003_s5.jpg?f=xxs" style="width:100%; padding: 10px 10px" >
+				<div class="action-buttons">
+					<button class="shopping-basket card-button">
+						<i class="fas fa-shopping-basket"></i>
+					</button>
+					<button class="like card-button">
+						<i class="far fa-heart"></i>
+					</button>
+				</div>
+				<h3>Плед, 150*200 см</h3>
+				<p>1999р.</p>
+				<div class="buy">
+					<button class="buy-button">
+						<p> Купить </p>	
+					</button>
+				</div>
+				
+			</div>
+			
+			<div class="card">
+				<img src="https://www.ikea.com/ru/ru/images/products/vinter-2021-vinter-2021-nabor-ukrasheniy-10-sht-zimnyaya-derevushka__0977811_pe813795_s5.jpg?f=xxs" style="width:100%; padding: 10px 10px" >
+				<div class="action-buttons">
+					<button class="shopping-basket card-button">
+						<i class="fas fa-shopping-basket"></i>
+					</button>
+					<button class="like card-button">
+						<i class="far fa-heart"></i>
+					</button>
+				</div>
+				<h3>Набор украшений</h3>
+				<p>1999р.</p>
+				<div class="buy">
+					<button class="buy-button">
+						<p> Купить </p>	
+					</button>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="row1 ots">
+			<div class="card">
+				<img src="https://www.ikea.com/ru/ru/images/products/behjaertad-behertad-formovaya-svecha-aromaticheskaya-koster-seryy__1006415_pe825797_s5.jpg?f=xxs" style="width:100%; padding: 10px 10px" >
+				<div class="action-buttons">
+					<button class="shopping-basket card-button">
+						<i class="fas fa-shopping-basket"></i>
+					</button>
+					<button class="like card-button">
+						<i class="far fa-heart"></i>
+					</button>
+				</div>
+				<h3>Формовая свеча, ароматическая</h3>
+				<p>399р./3шт.</p>
+				<div class="buy">
+					<button class="buy-button">
+						<p> Купить </p>	
+					</button>
+				</div>
+				
+			</div>
+			
+			<div class="card">
+				<img src="https://www.ikea.com/ru/ru/images/products/enrum-fonar-d-greyushchey-svechi-d-doma-ulicy-seryy__0990147_pe818771_s5.jpg?f=xxs" style="width:100%; padding: 10px 10px" >
+				<div class="action-buttons">
+					<button class="shopping-basket card-button">
+						<i class="fas fa-shopping-basket"></i>
+					</button>
+					<button class="like card-button">
+						<i class="far fa-heart"></i>
+					</button>
+				</div>
+				<h3>Фонарь-подсвечник для греющей свечи</h3>
+				
+				<p>299р.</p>
+				<div class="buy">
+					<button class="buy-button">
+						<p> Купить </p>	
+					</button>
+				</div>
+				
+			</div>
+			
+			<div class="card">
+				<img src="https://www.ikea.com/ru/ru/images/products/vindloes-vindlyos-podsvechnik-dlya-greyushchey-svechi-domik-chernyy__0990150_pe818778_s5.jpg?f=xxs" style="width:100%; padding: 10px 10px" >
+				<div class="action-buttons">
+					<button class="shopping-basket card-button">
+						<i class="fas fa-shopping-basket"></i>
+					</button>
+					<button class="like card-button">
+						<i class="far fa-heart"></i>
+					</button>
+				</div>
+				<h3>Подсвечник для греющей свечи</h3>
+				<p>499р.</p>
+				<div class="buy">
+					<button class="buy-button">
+						<p> Купить </p>	
+					</button>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<style>
+		
+		.card{
+		width: 29%;
+		border: 1px solid #000;
+		border-radius: 5px;
+		margin: 0 20px;
+		}
+		
+		.card-button{
+		background: rgba(0,0,0,0.3);
+		width: 30px;
+		height: 30px;
+		border: 0;
+		border-radius: 50%;
+		color: #fff;
+		margin-left: 7px;
+		}
+		
+		.card-button:hover{
+		background: rgba(0,0,0,0.5);
+		}
+		
+		.action-buttons{
+		width: 100%;
+		margin-top: -50px;
+		display: flex;
+		justify-content: flex-end;
+		
+		}
+		
+		.like{
+		margin-right: 20px;
+		}
+		
+		.buy{
+		width: 100%;
+		
+		}
+		
+		.buy-button{
+		background: rgba(0,0,0,0.3);
+		width: 100px;
+		height: 30px;
+		border: 1px;
+		border-radius: 3px;
+		color: #fff;
+		margin: 0 auto 10px auto;
+		display: block;
+		}
+		
+		.card .buy-button p {
+		padding: 0;
+		margin: 0;
+		font-size: 19px;
+		}
+		
+		.card h3{
+		padding-left: 35px;
+		margin: 15px 0 0 0;
+		font-family: Outfit;
+		}
+		
+		.card p{
+		padding-left: 30px;
+		font-family: Century Gothic;
+		}
+		
+		.row1{
+		display: flex;
+		justify-content: space-between;
+		}
+		
+		.ots{
+		margin-top: 20px;
+		}
+		
+		.main h2{
+		margin-left: 20px;
+		}
+		
+		.card h3{
+		font-family: Century Gothic; 
+		}
+		</style>
+		
+	</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="ots-1"></div>
+  <div class="column">
+  <h3>О нас...</h3>
+  <div style="text-align:left">
+  <p> NordicHouse - это команда профессионалов, с огромным запасом знаний о скандинавском быте и уюте!
+  Мы рады предложить вам коллекцию подарков ручной работы в скандинавском стиле из Дании, Швеции, Норвегии, Финляндии и 
+  других уголков мира.<br> 
+  Наш северный магазин представляет лучшую продукцию, включая скандинавский декор для дома, пледы, свечи, аксессуары для дома 
+  для праздника и на каждый день.<br>
+  Создайте свой собственный особый мир вместе с нами!</p>
+  </div>
+  </div>
+  
+  <div class="column">
+  <h3>Контакты</h3>
+  <p> телефон:<br>+7 800 555 35 35</p>
+  <p>ищите нас в соц.сетях:</p>
+  <button class="card-button">				
+  <i class="fab fa-instagram"></i>
+  </button>
+  <button class="card-button">
+  <i class="fab fa-telegram-plane"></i>
+  </button>
+  <button class="card-button">
+  <i class="fab fa-facebook-f"></i>
+  </button>	
+  <button class="card-button">
+  <i class="fab fa-vk"></i>
+  </button>
+  <button class="card-button">
+  <i class="fab fa-pinterest-p"></i>
+  </button>
+  
+  </div>
+  
+  <div  class="column">
+  <h3>Доставка</h3>
+  <div style="text-align:left">
+  <ul>
+	<li>Рассчитать стоимость можно, указав адрес на этапе оформления заказа в вашей корзине.</li>
+	<li>Вы можете воспользоваться услугой доставки товаров, выбрав ее в вашей корзине или оформив доставку в магазине.</li>
+	<li>Вы можете воспользоваться услугой экспресс-доставки, чтобы получить заказ уже сегодня. Опцию экспресс-доставки можно выбрать на этапе оформления заказа.</li>
+  </ul>
+  </div>
+  </div>
+  <div class="ots-1"></div>
+  
+</div>
+
+<style>
+
+.ots-1 {
+width: 5%;
+}
+
+.column{
+width: 30%;
+}
+
+.footer{
+display:flex;
+}
+
+</style>
+
+
+</body>
+</html>
+
+
